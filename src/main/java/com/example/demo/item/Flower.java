@@ -1,14 +1,12 @@
 package com.example.demo.item;
 
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name = "flowers")
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 public class Flower extends Item {
     @Id
