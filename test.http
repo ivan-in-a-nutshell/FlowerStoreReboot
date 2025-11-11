@@ -1,0 +1,15 @@
+GET http://localhost:8080/api/v1/flowers
+
+###
+POST http://localhost:8080/api/v1/flowers
+Content-Type: application/json
+
+{
+  "price": 100.0,
+  "sepalLength": 2.5,
+  "color": "Blue",
+  "description": "Difoa"
+}
+
+###
+GET http://localhost:8080/api/v1/flowers
