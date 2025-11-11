@@ -12,7 +12,7 @@ public class FlowerBucket extends Item {
 
     @Override
     public double price() {
-        return flowers.stream().mapToDouble(flower -> flower.getPrice()).sum();
+        return flowers.stream().mapToDouble(flower -> flower.price()).sum();
     }
 
     @Override
