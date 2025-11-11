@@ -14,7 +14,7 @@ public class DecoratorTests {
         PaperDecorator paperDecorator = new PaperDecorator(rose);
 
         Assertions.assertEquals("Rose wrapped in paper.", paperDecorator.getDescription());
-        Assertions.assertEquals(100, rose.getPrice());
+        Assertions.assertEquals(100, rose.price());
     }
 
     @Test
@@ -23,6 +23,6 @@ public class DecoratorTests {
         BasketDecorator basketDecorator = new BasketDecorator(some_flower);
 
         Assertions.assertEquals("Some flower in a basket.", basketDecorator.getDescription());
-        Assertions.assertEquals(100, some_flower.getPrice());
+        Assertions.assertEquals(100, some_flower.price());
     }
 }
